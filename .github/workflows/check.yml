@@ -1,0 +1,22 @@
+name: Check
+on: push
+jobs:
+  lint:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install deps
+        run: nmp ci
+      - name: Lint
+        run: nmp run Lint
+  test:
+    needs: [lint]
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install deps
+        run: nmp ci
+      - name: Test
+        run: nmp run test
