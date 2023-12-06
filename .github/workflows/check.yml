@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install nmp
+        run: nmp install
       - name: Install deps
         run: nmp ci
       - name: Lint
