@@ -6,12 +6,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install nmp
-        run: nmp install
+      - name: Install npm
+        run: npm install
       - name: Install deps
-        run: nmp ci
+        run: npm ci
       - name: Lint
-        run: nmp run Lint
+        run: npm run Lint
   test:
     needs: [lint]
     runs-on: windows-latest
@@ -19,6 +19,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install deps
-        run: nmp ci
+        run: npm ci
       - name: Test
-        run: nmp run test
+        run: npm run test
