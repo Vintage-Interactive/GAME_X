@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 {
     private Rigidbody2D rigidbody_;
     public float speed = 1.0f; // Скорость передвижения
     [SerializeField] private float angularSpeed = 100.0f; // Скорость вращения игрока при нажатии кнопок.
 
     private int healthPoints = 3;
+    public List<Vector3> trace = new List<Vector3>(); // for mob to avoid obstacles
+
 
     void Start()
     {
+        trace.Add(transform.position);
         rigidbody_ = GetComponentInParent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
         // Это передвижение
+        trace.Add(transform.position);
         Vector2 pressing = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         pressing.Normalize(); // А то по диагонали будет выгоднее двигаться(
         rigidbody_.velocity = pressing * speed;
