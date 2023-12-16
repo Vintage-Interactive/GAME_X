@@ -26,7 +26,7 @@ public class Door : MonoBehaviour
     // Сами двери находятся на layout 'Door'
     // Закрывание двери происходит автоматически после покидания зоны взаимодействия игрока с дверью
 
-    // ! Опирается в onTriggerEnter/Exit на то, что взаимодействовать с дверями могут только игроки! (матрица взаимодействия слоёв)
+    // Взаимодействие двери возможно только с носителем тэга 'Player'.
 
     // Если игроков будет два, то нужно будет немного модифицировать код: чтобы дверь не реагировала на игрока,
     // с которым она взаимодействовать не может (в Update настроить кнопки для каждого игрока)
@@ -103,7 +103,10 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Взаимодействовать с дверями могут только игроки, поэтому можно не делать проверки слоя/тэга
-        isHerePlayer = true;
+        if (collision.CompareTag("Player"))
+        {
+            isHerePlayer = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
