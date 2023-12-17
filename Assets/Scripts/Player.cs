@@ -6,43 +6,114 @@ using UnityEngine;
 public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 {
     private Rigidbody2D rigidbody_;
-    public float speed = 1.0f; // —корость передвижени€
+    [SerializeField] private float initialSpeed = 1.0f; // —корость передвижени€
+    [SerializeField] private float stelsSpeed = 0.5f;
+    [SerializeField] private float runSpeed = 2.0f;
     [SerializeField] private float angularSpeed = 100.0f; // —корость вращени€ игрока при нажатии кнопок.
+    [SerializeField] private float maxStamina = 10.0f;
+    [SerializeField] private float staminaRecoverySpeed = 0.01f;
+    [SerializeField] private float staminaWasteSpeed = 0.1f;
 
-    private int healthPoints = 3;
+    public bool isItStels = false;              //  ажетс€, что это будет нужно мобам
+
+    private Vector3 startPosition; // Ёто точка воскрешени€. ¬ данный момент это стартова€ позици€ игрока
+
+    private int healthPoints = 5;
+    private float speedScaler = 1.0f;
+    private float speed;
+    private bool enabledRunning = true;
+    [SerializeField] private float stamina = 0; // ¬ыведен в инспектор на данный момент исключительно дл€ отладки
+                                                // (чтобы можно было пон€ть на каком уровне выносливость сейчас)
+
+    // for debugging
+    SpriteRenderer spriteRenderer_;
+
     public List<Vector3> trace = new List<Vector3>(); // for mob to avoid obstacles
-
 
     void Start()
     {
         trace.Add(transform.position);
         rigidbody_ = GetComponentInParent<Rigidbody2D>();
+        startPosition = rigidbody_.position;
+        speed = initialSpeed;
+        enabledRunning = true;
+        stamina = maxStamina;
+
+        // For debugging
+        spriteRenderer_ = GetComponentInParent<SpriteRenderer>();
     }
 
     void FixedUpdate()
     {
+        if (Input.GetButton("Stels"))
+        {
+            // Debug.Log("I'm in stels!");
+            isItStels = true;
+            speed = stelsSpeed;
+
+            stamina += staminaRecoverySpeed;
+            if (stamina > maxStamina)
+            {
+                stamina = maxStamina;
+            }
+            spriteRenderer_.color = Color.yellow;
+        } else if (Input.GetButton("Run") && enabledRunning && (stamina > staminaWasteSpeed))
+        {
+            // Debug.Log("Run!");
+            speed = runSpeed;
+            isItStels = false;
+            stamina -= staminaWasteSpeed;
+            spriteRenderer_.color = Color.green;
+        } else
+        {
+            // Debug.Log("Walk");
+            speed = initialSpeed;
+            isItStels = false;
+
+            stamina += staminaRecoverySpeed;
+            if (stamina > maxStamina)
+            {
+                stamina = maxStamina;
+            }
+            spriteRenderer_.color = Color.white;
+        }
+        
         // Ёто передвижение
         trace.Add(transform.position);
         Vector2 pressing = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         pressing.Normalize(); // ј то по диагонали будет выгоднее двигатьс€(
-        rigidbody_.velocity = pressing * speed;
+        rigidbody_.velocity = pressing * speed * speedScaler;
 
         // Ёто вращение по q/e
         rigidbody_.angularVelocity = Input.GetAxis("Rotate") * angularSpeed;
     }
 
-    public void Die() // and respawn maybe...
+    public void Restart() // and reset
     {
-        healthPoints = 0;
+        Debug.Log("Resetting player settings to default");
+        rigidbody_.position = startPosition;
+        speedScaler = 1.0f; // ≈сли нужно дл€ оптимизации (потому что изменение множител€ происходит €вно реже, чем смена режима),
+                            // то могу просто сделать набор скоростей и мен€ть его
+        enabledRunning = true;
+        stamina = maxStamina;
+        // !! NEED TO RETURN LIGHT RADIUS TO DEFAULT
     }
 
     public void HeroDamaged(int damageCount)
     {
         healthPoints -= damageCount;
-        if (healthPoints < 0)
+        if (healthPoints == 2)
+        {
+            speedScaler = 2.0f / 3.0f;
+        } else if (healthPoints == 1)
+        {
+            // !! NEED TO CHANGE LIGHT RADIUS HERE!
+            enabledRunning = false;
+            speedScaler = 0.5f;
+        } else if (healthPoints <= 0)
         {
             Debug.Log("I died!");
-            Die();
+            Restart();
         }
     }
 
