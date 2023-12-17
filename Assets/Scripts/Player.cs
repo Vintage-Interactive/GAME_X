@@ -6,24 +6,24 @@ using UnityEngine;
 public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 {
     private Rigidbody2D rigidbody_;
-    [SerializeField] private float initialSpeed = 1.0f; // Скорость передвижения
+    [SerializeField] private float initialSpeed = 1.0f; // Movement speed
     [SerializeField] private float stelsSpeed = 0.5f;
     [SerializeField] private float runSpeed = 2.0f;
-    [SerializeField] private float angularSpeed = 100.0f; // Скорость вращения игрока при нажатии кнопок.
+    [SerializeField] private float angularSpeed = 100.0f; // The player's rotation speed when pressing buttons.
     [SerializeField] private float maxStamina = 10.0f;
     [SerializeField] private float staminaRecoverySpeed = 0.01f;
     [SerializeField] private float staminaWasteSpeed = 0.1f;
 
-    public bool isItStels = false;              // Кажется, что это будет нужно мобам
+    public bool isItStels = false;              // Maybe it will be useful for mobs
 
-    private Vector3 startPosition; // Это точка воскрешения. В данный момент это стартовая позиция игрока
+    private Vector3 respawnPosition; // Future respawn point
 
     private int healthPoints = 5;
     private float speedScaler = 1.0f;
     private float speed;
     private bool enabledRunning = true;
-    [SerializeField] private float stamina = 0; // Выведен в инспектор на данный момент исключительно для отладки
-                                                // (чтобы можно было понять на каком уровне выносливость сейчас)
+    [SerializeField] private float stamina = 0; // Displayed in the inspector at the moment only for debugging
+                                                // (so you can understand what level your stamina is now)
 
     // for debugging
     SpriteRenderer spriteRenderer_;
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     {
         trace.Add(transform.position);
         rigidbody_ = GetComponentInParent<Rigidbody2D>();
-        startPosition = rigidbody_.position;
+        respawnPosition = rigidbody_.position;
         speed = initialSpeed;
         enabledRunning = true;
         stamina = maxStamina;
@@ -91,9 +91,9 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     public void Restart() // and reset
     {
         Debug.Log("Resetting player settings to default");
-        rigidbody_.position = startPosition;
-        speedScaler = 1.0f; // Если нужно для оптимизации (потому что изменение множителя происходит явно реже, чем смена режима),
-                            // то могу просто сделать набор скоростей и менять его
+        // rigidbody_.position = startPosition;
+        speedScaler = 1.0f; // If necessary for optimization (because changing the multiplier occurs clearly less often than changing the mode),
+                            // then I can just make a set of speeds and change it
         enabledRunning = true;
         stamina = maxStamina;
         // !! NEED TO RETURN LIGHT RADIUS TO DEFAULT
