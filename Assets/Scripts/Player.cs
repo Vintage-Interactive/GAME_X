@@ -78,13 +78,16 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             spriteRenderer_.color = Color.white;
         }
         
-        // Это передвижение
-        trace.Add(transform.position);
+        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        if (trace[trace.Count - 1] != transform.position)
+        {
+            trace.Add(transform.position);
+        }
         Vector2 pressing = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        pressing.Normalize(); // А то по диагонали будет выгоднее двигаться(
+        pressing.Normalize(); // пїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(
         rigidbody_.velocity = pressing * speed * speedScaler;
 
-        // Это вращение по q/e
+        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ q/e
         rigidbody_.angularVelocity = Input.GetAxis("Rotate") * angularSpeed;
     }
 
@@ -113,6 +116,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         } else if (healthPoints <= 0)
         {
             Debug.Log("I died!");
+            // TODO: delete the following line
+            // Destroy(gameObject);
             Restart();
         }
     }
