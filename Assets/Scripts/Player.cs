@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     [SerializeField] private float maxStamina = 10.0f;
     [SerializeField] private float staminaRecoverySpeed = 0.01f;
     [SerializeField] private float staminaWasteSpeed = 0.1f;
+    [SerializeField] private LayerMask trapLayer = 1 << 10;
 
     public bool isItStels = false;              // Maybe it will be useful for mobs
 
@@ -22,6 +24,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     private float speedScaler = 1.0f;
     private float speed;
     private bool enabledRunning = true;
+    private bool isBlocked = false;
+    private Vector2 blockedPos;
     [SerializeField] private float stamina = 0; // Displayed in the inspector at the moment only for debugging
                                                 // (so you can understand what level your stamina is now)
 
@@ -45,6 +49,12 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 
     void FixedUpdate()
     {
+        if (isBlocked) {
+            transform.position = blockedPos;
+            rigidbody_.velocity = Vector2.zero;
+            Debug.Log("blocked POs is " + blockedPos[0] + " " + blockedPos[1]);
+            return;
+        }
         if (Input.GetButton("Stels"))
         {
             // Debug.Log("I'm in stels!");
@@ -78,13 +88,17 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             spriteRenderer_.color = Color.white;
         }
         
-        // Это передвижение
-        trace.Add(transform.position);
+        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        if (trace[trace.Count - 1] != transform.position)
+        {
+            trace.Add(transform.position);
+        }
         Vector2 pressing = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        pressing.Normalize(); // А то по диагонали будет выгоднее двигаться(
+        pressing.Normalize(); // пїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(
+        passTheTrap(getCurrentTrap());
         rigidbody_.velocity = pressing * speed * speedScaler;
 
-        // Это вращение по q/e
+        // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ q/e
         rigidbody_.angularVelocity = Input.GetAxis("Rotate") * angularSpeed;
     }
 
@@ -113,6 +127,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         } else if (healthPoints <= 0)
         {
             Debug.Log("I died!");
+            // TODO: delete the following line
+            // Destroy(gameObject);
             Restart();
         }
     }
@@ -125,5 +141,63 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     public void SetSpeed(float newSpeed)
     {
         speed = newSpeed;
+    }
+
+    public GameObject getCurrentTrap() {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.01f, trapLayer);
+        // Debug.Log("Length " + colliders.Length);
+        if (colliders.Length > 0) {
+            return colliders[0].gameObject;
+        }
+        return null;
+    }
+
+    IEnumerator BlockMovementForDuration(float blockDuration)
+    {
+        isBlocked = true;
+        blockedPos = transform.position;
+
+        // rigidbody_.velocity = Vector2.zero; 
+        // rigidbody_.angularVelocity = 0;
+        // rigidbody_.isKinematic = true;
+
+        Debug.Log("Movement Blocked! BStatic now");
+
+        yield return new WaitForSeconds(blockDuration);
+
+        // rigidbody_.isKinematic = false;
+
+        isBlocked = false;
+
+        Debug.Log("Movement Unblocked!");
+    }
+    public void passTheTrap(GameObject trap) {
+        Vector2 respPos = new Vector2(-100, -100);
+        if (trap is null) {
+            return;
+        }
+        String trap_tag = trap.tag;
+        if (string.Equals(trap_tag, "Sand")) {
+            Debug.Log("Sand");
+            return;
+        }
+        if (string.Equals(trap_tag, "Barbwire")) {
+            Debug.Log("Barbwire");
+            HeroDamaged(1);
+            trap.transform.position = respPos;
+            return;
+        }
+        if (string.Equals(trap_tag, "Swamp")) {
+            speed *= 0.3f;
+            Debug.Log("Swamp");
+        }
+        if (string.Equals(trap_tag, "CreakyFloor")) {
+            isItStels = false;
+            Debug.Log("CreakyFloor");
+        }
+        if (string.Equals(trap_tag, "ManTrap")) {
+            StartCoroutine(BlockMovementForDuration(3f));
+            trap.transform.position = respPos;
+        }
     }
 }
