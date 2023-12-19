@@ -10,6 +10,8 @@ public class ClassicZombie : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
+=======
+>>>>>>> 8fca736efb20b471dd59f3250f7a27713389243c
     private int current_pos_in_trace = -1; // has to be visible position!
 
     public LayerMask wallLayer;
