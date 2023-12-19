@@ -1541,10 +1541,13 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4807704386669338181, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: maxStamina
       value: 1000
       objectReference: {fileID: 0}
+=======
+>>>>>>> 2dae0ba695a825f2c1e3b3da4a7fb29cffabe4b4
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
