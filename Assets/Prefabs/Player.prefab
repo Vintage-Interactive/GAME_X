@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 576727472425420289}
   - component: {fileID: 4351088379494544357}
   - component: {fileID: 3980030316571293739}
-  - component: {fileID: 6653856824374302065}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -114,41 +113,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &6653856824374302065
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294104552730418463}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &3977190088259350692
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4135226380173633003}
   - component: {fileID: 4807704386669338181}
-  - component: {fileID: 3020259404948436227}
+  - component: {fileID: 3786703047000662188}
   m_Layer: 6
   m_Name: LogicalPart
   m_TagString: Player
@@ -194,10 +158,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f602a553b05e4248896657fab54c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  initialSpeed: 1
+  stelsSpeed: 0.5
+  runSpeed: 2
   angularSpeed: 100
---- !u!58 &3020259404948436227
-CircleCollider2D:
+  maxStamina: 10
+  staminaRecoverySpeed: 0.01
+  staminaWasteSpeed: 0.1
+  isItStels: 0
+  stamina: 0
+  trace: []
+--- !u!61 &3786703047000662188
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -228,6 +200,16 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1
+  m_Size: {x: 1.1, y: 1.1}
+  m_EdgeRadius: 0
