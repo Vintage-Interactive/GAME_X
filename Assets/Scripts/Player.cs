@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 {
+    Transform cameraTrans_;
+
     private Rigidbody2D rigidbody_;
     [SerializeField] private float initialSpeed = 1.0f; // Movement speed
     [SerializeField] private float stelsSpeed = 0.5f;
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 
         // For debugging
         spriteRenderer_ = GetComponentInParent<SpriteRenderer>();
+        cameraTrans_ = Camera.main.transform;
     }
 
     void FixedUpdate()
@@ -100,6 +103,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 
         // ��� �������� �� q/e
         rigidbody_.angularVelocity = Input.GetAxis("Rotate") * angularSpeed;
+
+        cameraTrans_.position = new Vector3(rigidbody_.position.x, rigidbody_.position.y, cameraTrans_.position.z);
     }
 
     public void Restart() // and reset
