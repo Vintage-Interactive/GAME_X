@@ -110,7 +110,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     public void Restart() // and reset
     {
         Debug.Log("Resetting player settings to default");
-        // rigidbody_.position = startPosition;
+        rigidbody_.position = respawnPosition;
         speedScaler = 1.0f; // If necessary for optimization (because changing the multiplier occurs clearly less often than changing the mode),
                             // then I can just make a set of speeds and change it
         enabledRunning = true;
