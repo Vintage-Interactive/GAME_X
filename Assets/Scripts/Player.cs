@@ -18,7 +18,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     [SerializeField] private float staminaWasteSpeed = 0.1f;
     [SerializeField] private LayerMask trapLayer = 1 << 10;
 
-    public bool isItStels = false;              // Maybe it will be useful for mobs
+    public bool inStealth = false;              // Maybe it will be useful for mobs
 
     private Vector3 respawnPosition; // Future respawn point
 
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         if (Input.GetButton("Stels"))
         {
             // Debug.Log("I'm in stels!");
-            isItStels = true;
+            inStealth = true;
             speed = stelsSpeed;
 
             stamina += staminaRecoverySpeed;
@@ -74,14 +74,14 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         {
             // Debug.Log("Run!");
             speed = runSpeed;
-            isItStels = false;
+            inStealth = false;
             stamina -= staminaWasteSpeed;
             spriteRenderer_.color = Color.green;
         } else
         {
             // Debug.Log("Walk");
             speed = initialSpeed;
-            isItStels = false;
+            inStealth = false;
 
             stamina += staminaRecoverySpeed;
             if (stamina > maxStamina)
@@ -115,6 +115,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
                             // then I can just make a set of speeds and change it
         enabledRunning = true;
         stamina = maxStamina;
+        
         // !! NEED TO RETURN LIGHT RADIUS TO DEFAULT
     }
 
@@ -132,8 +133,6 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         } else if (healthPoints <= 0)
         {
             Debug.Log("I died!");
-            // TODO: delete the following line
-            // Destroy(gameObject);
             Restart();
         }
     }
@@ -150,7 +149,6 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 
     public GameObject getCurrentTrap() {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.01f, trapLayer);
-        // Debug.Log("Length " + colliders.Length);
         if (colliders.Length > 0) {
             return colliders[0].gameObject;
         }
@@ -162,15 +160,9 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         isBlocked = true;
         blockedPos = transform.position;
 
-        // rigidbody_.velocity = Vector2.zero; 
-        // rigidbody_.angularVelocity = 0;
-        // rigidbody_.isKinematic = true;
-
         Debug.Log("Movement Blocked! BStatic now");
 
         yield return new WaitForSeconds(blockDuration);
-
-        // rigidbody_.isKinematic = false;
 
         isBlocked = false;
 
@@ -187,7 +179,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             return;
         }
         if (string.Equals(trap_tag, "Barbwire")) {
-            Debug.Log("Barbwire");
+            Debug.Log("Barbwire, ouch!");
             HeroDamaged(1);
             trap.transform.position = respPos;
             return;
@@ -197,7 +189,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             Debug.Log("Swamp");
         }
         if (string.Equals(trap_tag, "CreakyFloor")) {
-            isItStels = false;
+            inStealth = false;
             Debug.Log("CreakyFloor");
         }
         if (string.Equals(trap_tag, "ManTrap")) {

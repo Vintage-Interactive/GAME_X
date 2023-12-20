@@ -7,7 +7,7 @@ using UnityEngine.Assertions;
 using UnityEngine.UIElements;
 
 // TODO: different mobs, stealth
-public class ClassicZombie : MonoBehaviour
+public class Cockroach : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -27,10 +27,12 @@ public class ClassicZombie : MonoBehaviour
     public int hp = 2;
     public int damage = 1;
     public Player player_target;
+    public Vector2 startPos = new Vector2(100, 100);
 
     void Start()
     {
         lastPos = transform.position;
+        transform.position = startPos;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }

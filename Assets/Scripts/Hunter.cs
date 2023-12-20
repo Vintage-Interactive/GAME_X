@@ -7,7 +7,7 @@ using UnityEngine.Assertions;
 using UnityEngine.UIElements;
 
 // TODO: different mobs, stealth
-public class ClassicZombie : MonoBehaviour
+public class Hunter : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -19,10 +19,9 @@ public class ClassicZombie : MonoBehaviour
     public LayerMask wallLayer;
     public LayerMask playerLayer;
     public bool angry = false;
-    public float speed = 1.0f;
+    public float speed = 2.0f;
     public float chasingRadius = 6.0f;
     public float agroRadius = 3.0f; // has to be equal to the visible radius of the player, but no such a field in players
-    public float stealthAgroRaius = 2.5f;
     public float damageRadius = 1f;
     public int hp = 2;
     public int damage = 1;
@@ -46,9 +45,9 @@ public class ClassicZombie : MonoBehaviour
         Assert.IsNotNull(target);
         float distance = Vector2.Distance(target.position, transform.position);
         float realRadius = agroRadius;
-        if (player_target.inStealth) {
-            realRadius = stealthAgroRaius;
-        }
+        // if (player_target.inStealth) {
+        //     realRadius = stealthAgroRaius;
+        // }
         if (!angry)
         {
             tryToGetAngry(distance, realRadius);
