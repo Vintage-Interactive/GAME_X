@@ -1247,6 +1247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hunter
       objectReference: {fileID: 0}
+    - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4359330820800314839, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: speed
       value: 1
@@ -1535,6 +1539,10 @@ PrefabInstance:
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Pudge
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4359330820800314839, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: hp
@@ -2062,6 +2070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrazyScientist
       objectReference: {fileID: 0}
+    - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4359330820800314839, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: speed
       value: 1
@@ -2153,6 +2165,10 @@ PrefabInstance:
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Runner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4359330820800314839, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: hp
@@ -2772,6 +2788,10 @@ PrefabInstance:
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_TagString
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685966975161547943, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: endPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6060264059972230512, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3476,6 +3496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cockroach
       objectReference: {fileID: 0}
+    - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4359330820800314839, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: speed
       value: 1
@@ -3968,6 +3992,14 @@ PrefabInstance:
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_TagString
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685966975161547943, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: endPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685966975161547943, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: endPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6060264059972230512, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_LocalPosition.x

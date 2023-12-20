@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     private float progress = 0.0f; // Это уровень открытости двери, по сути
 
     private Vector3 startPosition; // Позиция, когда дверь закрыта
-    private Vector3 endPosition;   // Позиция, когда дверь открыта
+    [SerializeField] private Vector3 endPosition;   // Позиция, когда дверь открыта
     Transform transform_;          // Просто transform двери (именно той части, на которой спрайт висит)
 
     // Индикатор того, есть ли у нас ключ.
@@ -42,7 +42,7 @@ public class Door : MonoBehaviour
     {
         transform_ = gameObject.transform.GetChild(0);
         startPosition = transform_.position;
-        endPosition = transform_.position + transform_.up;
+        //endPosition = transform_.position + transform_.up;
     }
 
     private void Open()
