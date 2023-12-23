@@ -39,7 +39,7 @@ public class OneSidedDoor : MonoBehaviour
     {
         transform_ = gameObject.gameObject.transform.GetChild(0);
         startPosition = transform_.position;
-        endPosition = transform_.position + transform_.up;
+        endPosition = transform_.position + transform.localScale.y * transform_.up;
     }
 
     private void Open()

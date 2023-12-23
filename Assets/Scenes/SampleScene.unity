@@ -4110,6 +4110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key And Door
       objectReference: {fileID: 0}
+    - target: {fileID: 7758184788993940188, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: endPosition.x
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
