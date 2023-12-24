@@ -294,15 +294,22 @@ MonoBehaviour:
   runSpeed: 4
   angularSpeed: 100
   maxStamina: 10
+  respawnHealth: 5
   staminaRecoverySpeed: 0.01
   staminaWasteSpeed: 0.1
   trapLayer:
     serializedVersion: 2
     m_Bits: 1024
+  mobLayer:
+    serializedVersion: 2
+    m_Bits: 512
   inStealth: 0
   lightForPlayer: {fileID: 2080907353322149738}
+  lightDecreasingAtOneHeart: 0.5
   stamina: 0
   currentWeapon: 0
+  daggerAttackRadius: 2.7
+  patronsCount: 10
   trace: []
 --- !u!58 &6259758838620759648
 CircleCollider2D:

@@ -46,7 +46,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     float coolDownBetweenAttack = 0.25f;
     float lastTimeToWaitForAttack = 0.0f;
 
-    float daggerAttackRadius = 1.0f;
+    [SerializeField] float daggerAttackRadius = 1.0f;
     int attackDamage = 1;
 
     public int patronsCount = 10;  // Count of possible shots without special items
