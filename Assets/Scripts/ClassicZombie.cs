@@ -14,7 +14,7 @@ public class ClassicZombie : MonoBehaviour
     private int current_pos_in_trace = -1; // has to be visible position!
     private bool isBlocked = false;
     private Vector2 lastPos;
-    private Vector2 respPos = new Vector2(-100, -100);
+    private Vector2 respPos = new Vector2(-10000, -10000);
 
     public LayerMask wallLayer;
     public LayerMask playerLayer;

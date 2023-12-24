@@ -14,7 +14,7 @@ public class Cockroach : MonoBehaviour
     private int current_pos_in_trace = -1; // has to be visible position!
     private bool isBlocked = false;
     private Vector2 lastPos;
-    private Vector2 respPos = new Vector2(-100, -100);
+    private Vector2 respPos = new Vector2(-10000, -10000);
 
     public LayerMask wallLayer;
     public LayerMask playerLayer;
@@ -27,7 +27,7 @@ public class Cockroach : MonoBehaviour
     public int hp = 2;
     public int damage = 1;
     public Player player_target;
-    public Vector2 startPos = new Vector2(100, 100);
+    public Vector2 startPos = new Vector2(10000, 10000);
     Animator anim;
 
     void Start()
