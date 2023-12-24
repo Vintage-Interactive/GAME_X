@@ -10,6 +10,8 @@ public class Lever : MonoBehaviour
     [SerializeField] private GameObject Door;
     public Sprite inactiveImage;
 
+    bool deactivated = false;
+
     // Дополнительные комменттарии:
     // Ключ на слое 'Collectable'
     // Собирается автоматически
@@ -28,12 +30,13 @@ public class Lever : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !deactivated)
         {
             Door.GetComponent<ExitDoor>().KeyCollected();
             //this.gameObject.SetActive(false);
             this.GetComponentInChildren<SpriteRenderer>().sprite = inactiveImage;
             this.enabled = false;
+            deactivated = true;
         }
     }
 }
