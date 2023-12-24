@@ -2903,17 +2903,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c851fbce0c08e1d43aaf528c6bde6f69, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.g
-      value: 0.9411765
+      value: 0.9288277
       objectReference: {fileID: 0}
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 851ba823d7ca7be458892c4912f49274, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -2966,6 +2974,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7675637366397599234, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675637366397599234, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.56
+      objectReference: {fileID: 0}
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Yellow door
@@ -2973,6 +2989,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3211,6 +3235,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74b5963be2f7aa945ab53574e0361c67, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -3218,6 +3246,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.59607846
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0bf22c6d1f980b048b2d4fe6dfca53a0, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -3273,6 +3305,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Blue door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3612,6 +3652,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (3)
@@ -4190,6 +4234,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d4cfe2abbc39344e849c803f347b9a7, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0.14117648
       objectReference: {fileID: 0}
@@ -4197,6 +4245,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7b242d0a5a45f545a29aaa26fe43344, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0.13914847
@@ -4248,6 +4300,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Green door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4417,6 +4477,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b731532ebe22f4408a4c9e2081537c8, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (28)
@@ -4499,6 +4563,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6060264059972230512, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
   m_PrefabInstance: {fileID: 132200050}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &135269650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135269651}
+  - component: {fileID: 135269652}
+  m_Layer: 0
+  m_Name: Floor (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &135269651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135269650}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.132645, y: 84.61697, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234309503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &135269652
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135269650}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4d0ac97ad3bc19d4bb0d74f1a8beb520, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 48.145676, y: 23.54025}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &139216103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4655640502999625395, guid: cab3099b95a5372488eacddf6d789ade, type: 3}
@@ -6675,6 +6823,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &234309502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234309503}
+  m_Layer: 0
+  m_Name: AllFloors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234309503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234309502}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.271944, y: -27.34867, z: 3.3759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 329102528}
+  - {fileID: 1140409033}
+  - {fileID: 135269651}
+  - {fileID: 1064001847}
+  - {fileID: 399980289}
+  - {fileID: 1371753525}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &236034267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9055,12 +9240,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2735849, g: 0.09126548, b: 0.052910283, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4d0ac97ad3bc19d4bb0d74f1a8beb520, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 2
+  m_Size: {x: 151.00085, y: 168.19672}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9074,12 +9259,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329102526}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.2}
-  m_LocalScale: {x: 2000, y: 1000, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.0177, y: 65.13167, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 234309503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &331476204
 PrefabInstance:
@@ -9963,6 +10148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b731532ebe22f4408a4c9e2081537c8, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (21)
@@ -10587,6 +10776,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &399980288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399980289}
+  - component: {fileID: 399980290}
+  m_Layer: 0
+  m_Name: kitchen floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &399980289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399980288}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -95.88684, y: 83.37177, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234309503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &399980290
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399980288}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6bc2b71b53521344bb407d43c79cd23f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 22.669493, y: 22.421526}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &408149265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10732,6 +11005,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aaad707e9f0478f42b967158c3e617ea, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0.9036262
       objectReference: {fileID: 0}
@@ -10743,6 +11020,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a53b2de184f963479e59b9e08e4a665, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0.90588236
@@ -10798,6 +11079,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Light blue door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11446,6 +11735,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (14)
@@ -11715,6 +12008,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f2de1fbbfa2f184bb36906cf4124f4a, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
@@ -11726,6 +12023,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b01c23563160fb4d806765b795d665f, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -11785,6 +12086,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15215,6 +15524,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (17)
@@ -15883,6 +16196,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c0eea11053a6ba4db557d7c051047dc, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -15894,6 +16211,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.5764706
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 881540ef36b94f043abfb97f2326631f, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -15949,6 +16270,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Violet door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17087,6 +17416,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (16)
@@ -19810,6 +20143,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (10)
@@ -21471,6 +21808,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1250997778}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 905e54d2fc6b237499e89395c534aedf, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Enter door
@@ -21591,6 +21932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (27)
@@ -22615,6 +22960,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b731532ebe22f4408a4c9e2081537c8, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (22)
@@ -23384,6 +23733,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8654761ee244b5b48989c66944645cc6, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -23391,6 +23744,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.23288822
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fce9d68f3d8b81d4589d814688b6665e, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -23444,12 +23801,20 @@ PrefabInstance:
       value: Dark blue door
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122
+      value: 121.774
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -70.5
+      value: -70.572
       objectReference: {fileID: 0}
     - target: {fileID: 9168204276680052297, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalScale.y
@@ -23600,6 +23965,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b731532ebe22f4408a4c9e2081537c8, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (23)
@@ -24601,6 +24970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (25)
@@ -24992,6 +25365,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (26)
@@ -25451,6 +25828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (2)
@@ -25850,6 +26231,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (24)
@@ -28087,6 +28472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (11)
@@ -28487,6 +28876,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ae80449159c50d4488ffa57fa58d774c, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
@@ -28498,6 +28891,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b76dca37a8db68044bc68f955e8b374f, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -28550,17 +28951,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7675637366397599234, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675637366397599234, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Orange door
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.5
+      value: -60.52
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23
+      value: -23.04
       objectReference: {fileID: 0}
     - target: {fileID: 9168204276680052297, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalScale.y
@@ -29393,6 +29810,90 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1472614191}
   m_SourcePrefab: {fileID: 100100000, guid: cab3099b95a5372488eacddf6d789ade, type: 3}
+--- !u!1 &1064001846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064001847}
+  - component: {fileID: 1064001848}
+  m_Layer: 0
+  m_Name: Floor (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1064001847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064001846}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -85.6864, y: 12.4105, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234309503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1064001848
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064001846}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4d0ac97ad3bc19d4bb0d74f1a8beb520, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 46.23444, y: 61.99941}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1064504343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31133,6 +31634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (6)
@@ -31710,6 +32215,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (32)
@@ -31920,6 +32429,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1140409032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1140409033}
+  - component: {fileID: 1140409034}
+  m_Layer: 0
+  m_Name: Floor (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1140409033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140409032}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -78.38885, y: 114.74437, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234309503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1140409034
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140409032}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4d0ac97ad3bc19d4bb0d74f1a8beb520, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 60.56127, y: 41.375572}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1140712122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38069,6 +38662,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 585193168}
     m_Modifications:
     - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b05401c70c1d1b4b8629d3bf660df57, type: 3}
+    - target: {fileID: 1639952199201815071, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -38080,6 +38677,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.909804
       objectReference: {fileID: 0}
+    - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca1632ab515c8b441af9569938580ecd, type: 3}
     - target: {fileID: 6091789379171043117, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -38135,6 +38736,14 @@ PrefabInstance:
     - target: {fileID: 7700226090591240457, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_Name
       value: Magenta door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8158148089604301986, guid: 55c17586b50e39944b0b63cfaf610822, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39092,6 +39701,90 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2136012042}
   m_SourcePrefab: {fileID: 100100000, guid: cab3099b95a5372488eacddf6d789ade, type: 3}
+--- !u!1 &1371753524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1371753525}
+  - component: {fileID: 1371753526}
+  m_Layer: 0
+  m_Name: kitchen floor (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1371753525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371753524}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -86.1092, y: 58.0296, z: -3.1759334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234309503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1371753526
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371753524}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6bc2b71b53521344bb407d43c79cd23f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 43.703777, y: 29.087296}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1377095175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40335,6 +41028,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (18)
@@ -41295,6 +41992,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (7)
@@ -41503,6 +42204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1710486061}
     m_Modifications:
+    - target: {fileID: 1612845662163971057, guid: 8cf9850dc77e55643876f1672c5be795, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 584971f83257dfe44a88e7a95b93b58f, type: 3}
     - target: {fileID: 2655907478326020714, guid: 8cf9850dc77e55643876f1672c5be795, type: 3}
       propertyPath: m_Name
       value: One-sided Door (1)
@@ -42166,6 +42871,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (30)
@@ -42612,6 +43321,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (4)
@@ -42831,11 +43544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42851,7 +43564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7069991
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -42859,23 +43572,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.012340745
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 576727472425420289, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 3786703047000662188, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: m_Size.x
@@ -42885,6 +43598,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4351088379494544357, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e81055043067d0448d39515f9db474f, type: 3}
     - target: {fileID: 4807704386669338181, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
       propertyPath: runSpeed
       value: 12
@@ -44735,6 +45452,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (15)
@@ -45613,6 +46334,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (12)
@@ -46373,6 +47098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (31)
@@ -46641,6 +47370,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (8)
@@ -47743,6 +48476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (29)
@@ -50211,6 +50948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (20)
@@ -52265,6 +53006,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (9)
@@ -52350,6 +53095,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (1)
@@ -54270,6 +55019,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (5)
@@ -54465,6 +55218,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (19)
@@ -54974,6 +55731,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1710486061}
     m_Modifications:
+    - target: {fileID: 1612845662163971057, guid: 8cf9850dc77e55643876f1672c5be795, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 584971f83257dfe44a88e7a95b93b58f, type: 3}
     - target: {fileID: 2655907478326020714, guid: 8cf9850dc77e55643876f1672c5be795, type: 3}
       propertyPath: m_Name
       value: One-sided Door
@@ -57394,6 +58155,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b731532ebe22f4408a4c9e2081537c8, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (33)
@@ -57607,6 +58372,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f0c9a483693764a9c9a03212d3405b, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door (13)
@@ -58336,7 +59105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 495705cccb539fd4c866cec77245f3b3, type: 3}
   m_Color: {r: 0.024474904, g: 0.5411765, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -58434,7 +59203,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.56, y: 10.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
@@ -58467,6 +59236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210814854}
     m_Modifications:
+    - target: {fileID: 892691337561344306, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ade5742215296b648ad3537e66e686ab, type: 3}
     - target: {fileID: 1718972055394315242, guid: b602c27ce8607d440b9152f2c8033393, type: 3}
       propertyPath: m_Name
       value: Simple Door
@@ -58607,7 +59380,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 329102528}
   - {fileID: 1504715505}
   - {fileID: 1274620181}
   - {fileID: 241504990}
@@ -58615,3 +59387,4 @@ SceneRoots:
   - {fileID: 738280141}
   - {fileID: 828591909}
   - {fileID: 155435690}
+  - {fileID: 234309503}
