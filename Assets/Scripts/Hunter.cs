@@ -166,10 +166,10 @@ public class Hunter : MonoBehaviour
     }
     public void damageMob(int damage) {
         hp -= damage;
-        StartCoroutine(BlockMovementForDuration(1f));
         if (hp <= 0) {
             Die();
         }
+        StartCoroutine(BlockMovementForDuration(1f));
     }
 
     private void Die() {

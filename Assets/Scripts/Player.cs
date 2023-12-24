@@ -17,6 +17,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     [SerializeField] private float staminaRecoverySpeed = 0.01f;
     [SerializeField] private float staminaWasteSpeed = 0.1f;
     [SerializeField] private LayerMask trapLayer = 1 << 10;
+    [SerializeField] private LayerMask mobLayer = 1 << 9;
 
     public bool inStealth = false;              // Maybe it will be useful for mobs
 
@@ -28,8 +29,26 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     private bool enabledRunning = true;
     private bool isBlocked = false;
     private Vector2 blockedPos;
+
+    [SerializeField] private Light lightForPlayer;
+    [SerializeField] private float lightDecreasingAtOneHeart = 0.5f;
+    private float defaultLightRadius;
+
     [SerializeField] private float stamina = 0; // Displayed in the inspector at the moment only for debugging
                                                 // (so you can understand what level your stamina is now)
+
+    enum WeaponState { Dagger = 0, Shotgun = 1 };
+    [SerializeField] private WeaponState currentWeapon = WeaponState.Dagger;
+    float coolDownBetweenChanging = 0.25f;
+    float lastTimeToWaitForChanging = 0.0f;
+
+    float coolDownBetweenAttack = 0.25f;
+    float lastTimeToWaitForAttack = 0.0f;
+
+    float daggerAttackRadius = 1.0f;
+    int attackDamage = 1;
+
+    public int patronsCount = 10;  // Count of possible shots without special items
 
     // for debugging
     SpriteRenderer spriteRenderer_;
@@ -48,10 +67,40 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         // For debugging
         spriteRenderer_ = GetComponentInParent<SpriteRenderer>();
         cameraTrans_ = Camera.main.transform;
+        defaultLightRadius = lightForPlayer.intensity;
     }
+
+    // TODO: need to move from FixedUpdate to Update rotation and changing weapon
+    // remove float time in fixed update. Use 'int' instead.
+    // or just move it to update and use GetButtonDown instead of GetButton - time will be useless
 
     void FixedUpdate()
     {
+        if (lastTimeToWaitForChanging <= 0.0f && Input.GetButton("Change_weapon"))
+        {
+            ChangeWeapon();
+            lastTimeToWaitForChanging = coolDownBetweenChanging;
+        } else if (lastTimeToWaitForChanging > 0.0f)
+        {
+            lastTimeToWaitForChanging -= Time.deltaTime;
+        }
+
+        if (lastTimeToWaitForAttack <= 0.0f && Input.GetButton("Attack"))
+        {
+            if (currentWeapon == WeaponState.Dagger)
+            {
+                Attack(FindNearestMonster(daggerAttackRadius), attackDamage);
+                lastTimeToWaitForAttack = coolDownBetweenAttack;
+            } else if (currentWeapon == WeaponState.Shotgun)
+            {
+                Attack(FindNearestMonster(defaultLightRadius), attackDamage);
+                lastTimeToWaitForAttack = coolDownBetweenAttack;
+            }
+        } else if (lastTimeToWaitForAttack > 0.0f)
+        {
+            lastTimeToWaitForAttack -= Time.deltaTime;
+        }
+
         if (isBlocked) {
             transform.position = blockedPos;
             rigidbody_.velocity = Vector2.zero;
@@ -115,8 +164,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
                             // then I can just make a set of speeds and change it
         enabledRunning = true;
         stamina = maxStamina;
-        
-        // !! NEED TO RETURN LIGHT RADIUS TO DEFAULT
+
+        lightForPlayer.intensity = defaultLightRadius;
     }
 
     public void HeroDamaged(int damageCount)
@@ -127,7 +176,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             speedScaler = 2.0f / 3.0f;
         } else if (healthPoints == 1)
         {
-            // !! NEED TO CHANGE LIGHT RADIUS HERE!
+            lightForPlayer.intensity *= lightDecreasingAtOneHeart;
             enabledRunning = false;
             speedScaler = 0.5f;
         } else if (healthPoints <= 0)
@@ -195,6 +244,79 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         if (string.Equals(trap_tag, "ManTrap")) {
             StartCoroutine(BlockMovementForDuration(3f));
             trap.transform.position = respPos;
+        }
+    }
+
+    private void ChangeWeapon()
+    {
+        //Debug.Log("Change");
+        if (currentWeapon == WeaponState.Dagger && patronsCount > 0)
+        {
+            currentWeapon = WeaponState.Shotgun;
+        } else if (currentWeapon == WeaponState.Shotgun)
+        {
+            currentWeapon = WeaponState.Dagger;
+        }
+    }
+
+    Transform FindNearestMonster(float radiusOfSearch)
+    {
+        Collider2D[] monsters = Physics2D.OverlapCircleAll(rigidbody_.position, radiusOfSearch, mobLayer);
+
+        Transform closestMonster = null;
+        float closestDistanceSqr = Mathf.Infinity; // Используем квадрат расстояния
+
+        foreach (Collider2D monster in monsters)
+        {
+            Transform curMonster = monster.transform;
+            Vector2 pos = curMonster.position;
+            float distanceToMonsterSqr = (rigidbody_.position - pos).sqrMagnitude;
+
+            if (distanceToMonsterSqr < closestDistanceSqr)
+            {
+                closestDistanceSqr = distanceToMonsterSqr;
+                closestMonster = curMonster;
+            }
+        }
+
+        return closestMonster;
+    }
+
+    void Attack(Transform enemy, int damageCount)
+    {
+        if (enemy is null)
+        {
+            return;
+        }
+
+        ClassicZombie simpleEnemy = enemy.GetComponent<ClassicZombie>();
+        if (simpleEnemy != null)
+        {
+            simpleEnemy.damageMob(damageCount);
+            Debug.Log("Left: (hp)");
+            Debug.Log(simpleEnemy.hp);
+        }
+
+        Cockroach cockroachEnemy = enemy.GetComponent<Cockroach>();
+        if (cockroachEnemy != null)
+        {
+            cockroachEnemy.damageMob(damageCount);
+            Debug.Log("Left: (hp)");
+            Debug.Log(cockroachEnemy.hp);
+        }
+
+        MadScientist scientEnemy = enemy.GetComponent<MadScientist>();
+        if (scientEnemy != null)
+        {
+            Debug.Log("Impossible to hurt mad scientist!");
+        }
+
+        Hunter hunterEnemy = enemy.GetComponent<Hunter>();
+        if (hunterEnemy != null)
+        {
+            hunterEnemy.damageMob(damageCount);
+            Debug.Log("Left: (hp)");
+            Debug.Log(hunterEnemy.hp);
         }
     }
 }
