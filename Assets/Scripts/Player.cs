@@ -14,6 +14,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     [SerializeField] private float runSpeed = 2.0f;
     [SerializeField] private float angularSpeed = 100.0f; // The player's rotation speed when pressing buttons.
     [SerializeField] private float maxStamina = 10.0f;
+    [SerializeField] private int respawnHealth = 5;
     [SerializeField] private float staminaRecoverySpeed = 0.01f;
     [SerializeField] private float staminaWasteSpeed = 0.1f;
     [SerializeField] private LayerMask trapLayer = 1 << 10;
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         spriteRenderer_ = GetComponentInParent<SpriteRenderer>();
         cameraTrans_ = Camera.main.transform;
         defaultLightRadius = lightForPlayer.intensity;
+        healthPoints = respawnHealth;
     }
 
     // TODO: need to move from FixedUpdate to Update rotation and changing weapon
@@ -175,6 +177,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
                             // then I can just make a set of speeds and change it
         enabledRunning = true;
         stamina = maxStamina;
+        healthPoints = respawnHealth;
 
         lightForPlayer.intensity = defaultLightRadius;
     }
@@ -304,8 +307,6 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         if (simpleEnemy != null)
         {
             simpleEnemy.damageMob(damageCount);
-            Debug.Log("Left: (hp)");
-            Debug.Log(simpleEnemy.hp);
         }
 
         Cockroach cockroachEnemy = enemy.GetComponent<Cockroach>();
@@ -326,8 +327,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         if (hunterEnemy != null)
         {
             hunterEnemy.damageMob(damageCount);
-            Debug.Log("Left: (hp)");
-            Debug.Log(hunterEnemy.hp);
+            // Debug.Log("Left: (hp)");
+            // Debug.Log(hunterEnemy.hp);
         }
     }
 }
