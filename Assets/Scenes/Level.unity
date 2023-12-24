@@ -10153,6 +10153,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533566674472969846, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 1532043966452229074, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
       propertyPath: m_Name
       value: HeartBonus (1)
@@ -21878,6 +21882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4565728877192331799, guid: 72c811de382b53d40a08ab10362de960, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 7706548449268533600, guid: 72c811de382b53d40a08ab10362de960, type: 3}
       propertyPath: m_Name
       value: AmmoBonus (3)
@@ -23699,6 +23707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533566674472969846, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 1532043966452229074, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
       propertyPath: m_Name
       value: HeartBonus
@@ -27417,6 +27429,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4565728877192331799, guid: 72c811de382b53d40a08ab10362de960, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 7706548449268533600, guid: 72c811de382b53d40a08ab10362de960, type: 3}
       propertyPath: m_Name
       value: AmmoBonus (1)
@@ -34704,7 +34720,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4807704386669338181, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
   m_PrefabInstance: {fileID: 1504715505}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1611443830}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f602a553b05e4248896657fab54c6e8, type: 3}
@@ -40371,6 +40387,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533566674472969846, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 1532043966452229074, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
       propertyPath: m_Name
       value: HeartBonus (4)
@@ -46603,6 +46623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4565728877192331799, guid: 72c811de382b53d40a08ab10362de960, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 7706548449268533600, guid: 72c811de382b53d40a08ab10362de960, type: 3}
       propertyPath: m_Name
       value: AmmoBonus (2)
@@ -47308,6 +47332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533566674472969846, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 1532043966452229074, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
       propertyPath: m_Name
       value: HeartBonus (2)
@@ -51582,6 +51610,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1611443830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3977190088259350692, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
+  m_PrefabInstance: {fileID: 1504715505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1612681753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52643,6 +52676,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4565728877192331799, guid: 72c811de382b53d40a08ab10362de960, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 7706548449268533600, guid: 72c811de382b53d40a08ab10362de960, type: 3}
       propertyPath: m_Name
       value: AmmoBonus
@@ -60922,6 +60959,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533566674472969846, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
+      propertyPath: mainCharacter_
+      value: 
+      objectReference: {fileID: 1611443830}
     - target: {fileID: 1532043966452229074, guid: 84f64df313283bd4aa56f256a422c617, type: 3}
       propertyPath: m_Name
       value: HeartBonus (3)

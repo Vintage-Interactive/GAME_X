@@ -289,11 +289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f602a553b05e4248896657fab54c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsWalking: 0
+  animations: {fileID: 0}
   initialSpeed: 2
   stelsSpeed: 1
   runSpeed: 4
   angularSpeed: 100
-  maxStamina: 10
+  maxStamina: 40
   respawnHealth: 5
   staminaRecoverySpeed: 0.01
   staminaWasteSpeed: 0.1
