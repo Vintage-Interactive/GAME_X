@@ -49416,14 +49416,6 @@ PrefabInstance:
       propertyPath: animations
       value: 
       objectReference: {fileID: 773599505}
-    - target: {fileID: 4807704386669338181, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
-      propertyPath: maxStamina
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807704386669338181, guid: 9945528423b5bbf4e992c5e4420664b3, type: 3}
-      propertyPath: trapLayer.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -60135,7 +60127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1945899775
 Light:
   m_ObjectHideFlags: 0
