@@ -331,4 +331,10 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             // Debug.Log(hunterEnemy.hp);
         }
     }
+
+    public void AddAmmo(int value)
+    {
+        patronsCount += value;
+        // Debug.Log("Added ammo");
+    }
 }
