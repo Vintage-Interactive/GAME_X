@@ -37,7 +37,7 @@ public class ExitDoor : MonoBehaviour
     {
         //Debug.Log("My key collected!");
         currentKeyCount += 1;
-        //Debug.Log(currentKeyCount);
+        Debug.Log(currentKeyCount);
     }
 
     private void Start()

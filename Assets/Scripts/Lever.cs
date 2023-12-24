@@ -8,6 +8,7 @@ public class Lever : MonoBehaviour
     // Это ссылка на дверь, которую открывает данный ключ
     // Ставится в инспекторе (в префабе уже стоит)
     [SerializeField] private GameObject Door;
+    public Sprite inactiveImage;
 
     // Дополнительные комменттарии:
     // Ключ на слое 'Collectable'
@@ -31,6 +32,7 @@ public class Lever : MonoBehaviour
         {
             Door.GetComponent<ExitDoor>().KeyCollected();
             //this.gameObject.SetActive(false);
+            this.GetComponentInChildren<SpriteRenderer>().sprite = inactiveImage;
             this.enabled = false;
         }
     }
