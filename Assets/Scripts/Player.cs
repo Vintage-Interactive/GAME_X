@@ -40,8 +40,8 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
     [SerializeField] private float stamina = 0; // Displayed in the inspector at the moment only for debugging
                                                 // (so you can understand what level your stamina is now)
 
-    enum WeaponState { Dagger = 0, Shotgun = 1 };
-    [SerializeField] private WeaponState currentWeapon = WeaponState.Dagger;
+    public enum WeaponState { Dagger = 0, Shotgun = 1 };
+    [SerializeField] public WeaponState currentWeapon = WeaponState.Dagger;
     float coolDownBetweenChanging = 0.25f;
     float lastTimeToWaitForChanging = 0.0f;
 
