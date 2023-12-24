@@ -9,9 +9,13 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     // private TextMeshProUGUI textMeshProComponent;
     public TMP_Text timerText;
-    private DateTime startTime;
+    public DateTime startTime;
     private DateTime curTime;
     private int timeOverAllSeconds = 120;
+
+    private int lostTimeEnded = -10;
+    [SerializeField] private Player mainCharacter;
+
     void Start()
     {
         startTime = DateTime.Now;
@@ -29,9 +33,19 @@ public class Timer : MonoBehaviour
             secs = "0" + secs;
         }
         if (secsRemaining < 0) {
-            timerText.text = "Lost";
+            timerText.text = "Lost! You are dead. Start from the starting location.";
+            if (secsRemaining <= lostTimeEnded)
+            {
+                mainCharacter.Restart();
+                startTime = DateTime.Now;
+            }
             return;
         }
         timerText.text = minsRemaining.ToString() + ":" + secs;
+    }
+
+    IEnumerator BlockMovementForDuration(float blockDuration)
+    {
+        yield return new WaitForSeconds(blockDuration);
     }
 }
