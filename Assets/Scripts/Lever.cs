@@ -12,7 +12,7 @@ public class Lever : MonoBehaviour
     // Дополнительные комменттарии:
     // Ключ на слое 'Collectable'
     // Собирается автоматически
-    // После сбора деактивируется (удаления не происходит)
+    // После сбора компонент Lever деактивируется (не весь элемент!)
 
     // Если нужно сделать по нажатию кнопки, то это не проблема:
     // можно сделать схожим с дверьми образом: переменная IsPlayerHere и Update для сбора кнопкой
@@ -30,7 +30,8 @@ public class Lever : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Door.GetComponent<ExitDoor>().KeyCollected();
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            this.enabled = false;
         }
     }
 }
