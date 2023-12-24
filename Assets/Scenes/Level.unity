@@ -4269,6 +4269,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Hunter (2)
@@ -5876,6 +5880,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -11313,6 +11321,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
@@ -14311,6 +14323,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Hunter
@@ -15608,6 +15624,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -22035,6 +22055,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: ClassicZombie (1)
@@ -22651,6 +22675,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -26902,6 +26930,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17fa696e75f1cfd43ac30ad821f36866, type: 2}
@@ -28129,6 +28161,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Hunter (1)
@@ -28382,6 +28418,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -39839,6 +39879,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: ClassicZombie (2)
@@ -42869,6 +42913,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -47395,6 +47443,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -60127,7 +60179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1945899775
 Light:
   m_ObjectHideFlags: 0
@@ -60135,7 +60187,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945899774}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -63816,6 +63868,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_Name
       value: Cockroach
@@ -64139,6 +64195,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -64618,6 +64678,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
@@ -67192,6 +67256,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
       propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 740952213302513889, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1043383336774073665, guid: c08c68a6f28e3304e947b9bab9affe29, type: 3}
