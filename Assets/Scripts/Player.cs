@@ -7,7 +7,9 @@ using UnityEngine;
 public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
 {
     Transform cameraTrans_;
+    public bool IsWalking;
 
+    public Animator animations;
     private Rigidbody2D rigidbody_;
     [SerializeField] private float initialSpeed = 1.0f; // Movement speed
     [SerializeField] private float stelsSpeed = 0.5f;
@@ -66,7 +68,6 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         stamina = maxStamina;
 
         // For debugging
-        spriteRenderer_ = GetComponentInParent<SpriteRenderer>();
         cameraTrans_ = Camera.main.transform;
         defaultLightRadius = lightForPlayer.intensity;
         healthPoints = respawnHealth;
@@ -91,6 +92,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         {
             if (currentWeapon == WeaponState.Dagger)
             {
+                animations.Play("Attack");
                 Attack(FindNearestMonster(daggerAttackRadius), attackDamage);
                 lastTimeToWaitForAttack = coolDownBetweenAttack;
             } else if (currentWeapon == WeaponState.Shotgun)
@@ -99,6 +101,7 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
                 if (enemy != null)
                 {
                     patronsCount -= 1;
+                    animations.Play("Shoot");
                     Attack(enemy, attackDamage);
                     lastTimeToWaitForAttack = coolDownBetweenAttack;
 
@@ -124,6 +127,9 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
         {
             // Debug.Log("I'm in stels!");
             inStealth = true;
+            animations.SetBool("isSneaking", inStealth);
+            animations.SetBool("IsWalking", IsWalking);
+            animations.SetBool("isRunning", false);
             speed = stelsSpeed;
 
             stamina += staminaRecoverySpeed;
@@ -131,17 +137,21 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             {
                 stamina = maxStamina;
             }
-            spriteRenderer_.color = Color.yellow;
         } else if (Input.GetButton("Run") && enabledRunning && (stamina > staminaWasteSpeed))
         {
             // Debug.Log("Run!");
             speed = runSpeed;
             inStealth = false;
+            animations.SetBool("isSneaking", inStealth);
+            animations.SetBool("IsWalking", IsWalking);
+            animations.SetBool("isRunning", true);
             stamina -= staminaWasteSpeed;
-            spriteRenderer_.color = Color.green;
         } else
         {
             // Debug.Log("Walk");
+            animations.SetBool("isSneaking", false);
+            animations.SetBool("IsWalking", IsWalking);
+            animations.SetBool("isRunning", false);
             speed = initialSpeed;
             inStealth = false;
 
@@ -150,7 +160,23 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
             {
                 stamina = maxStamina;
             }
-            spriteRenderer_.color = Color.white;
+        }
+        
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        {
+            if (!IsWalking)
+            {
+                IsWalking = true;
+                animations.SetBool("IsWalking", IsWalking);
+            }
+        }
+        else
+        {
+            if (IsWalking)
+            {
+                IsWalking = false;
+                animations.SetBool("IsWalking", IsWalking);
+            }
         }
         
         // ��� ������������
