@@ -127,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 17
-        width: 16
-        height: 14
+        y: 272
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: BeetleAnimation_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 17
-        width: 16
-        height: 14
+        x: 256
+        y: 272
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: BeetleAnimation_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 17
-        width: 16
-        height: 14
+        x: 512
+        y: 272
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: BeetleAnimation_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 17
-        width: 16
-        height: 14
+        x: 768
+        y: 272
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,9 +211,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 16
-        height: 14
+        y: 16
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: BeetleAnimation_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 2
-        width: 16
-        height: 14
+        x: 256
+        y: 32
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: BeetleAnimation_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 2
-        width: 16
-        height: 14
+        x: 512
+        y: 32
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: BeetleAnimation_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 2
-        width: 16
-        height: 14
+        x: 768
+        y: 32
+        width: 256
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

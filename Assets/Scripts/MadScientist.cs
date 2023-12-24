@@ -24,6 +24,7 @@ public class MadScientist : MonoBehaviour
     public int damage = 1;
     public Transform door_target;
     public Player player_target;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class MadScientist : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         lastPos = transform.position;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -71,12 +73,18 @@ public class MadScientist : MonoBehaviour
     public void tryToDamage(float distance) {
         if (distance < damageRadius)
         {
+            anim.SetTrigger("ToHit");
             Debug.Log("Damaging good guy!");
             player_target.HeroDamaged(damage);
             StartCoroutine(BlockMovementForDuration(2f)); 
             return;
             // some animation of zombie
         }
+    }
+    private void rotateTowardsPlayer() {
+        Vector3 our_pos = player_target.transform.position - transform.position;
+        our_pos.z = 0;
+        transform.right = our_pos;
     }
 
     IEnumerator BlockMovementForDuration(float blockDuration)

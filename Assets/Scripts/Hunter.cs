@@ -26,12 +26,14 @@ public class Hunter : MonoBehaviour
     public int hp = 2;
     public int damage = 1;
     public Player player_target;
+    Animator anim;
 
     void Start()
     {
         lastPos = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate() 
@@ -53,14 +55,16 @@ public class Hunter : MonoBehaviour
             tryToGetAngry(distance, realRadius);
             return; // they have some delay, their reaction speed
         }
+        rotateTowardsPlayer();
         Vector2 direction = (target.position - transform.position).normalized;
-        spriteRenderer.flipX = (direction.x < 0);
+        // spriteRenderer.flipX = (direction.x < 0);
 
         tryToDamage(distance);
 
         // tries to go straight to player
         if (CanSee(target))
         {
+            anim.SetTrigger("ToWalk");
             lastPos = transform.position;
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
             return;
@@ -69,6 +73,7 @@ public class Hunter : MonoBehaviour
         // chases the player's trace
         Vector2 targetPosition = player_target.trace[current_pos_in_trace];
         if (chasingRadius >= Vector2.Distance(targetPosition, transform.position)) {
+            anim.SetTrigger("ToWalk");
             MoveToPositionInTrace(targetPosition);
         }
     }
@@ -84,10 +89,15 @@ public class Hunter : MonoBehaviour
             current_pos_in_trace = player_target.trace.Count - 1;
         }
     }
-
+    private void rotateTowardsPlayer() {
+        Vector3 our_pos = player_target.transform.position - transform.position;
+        our_pos.z = 0;
+        transform.right = our_pos;
+    }
     public void tryToDamage(float distance) {
         if (distance < damageRadius)
         {
+            anim.SetTrigger("ToHit");
             Debug.Log("Damaging good guy!");
             player_target.HeroDamaged(damage);
             StartCoroutine(BlockMovementForDuration(2f)); 

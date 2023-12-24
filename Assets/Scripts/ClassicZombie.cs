@@ -27,18 +27,23 @@ public class ClassicZombie : MonoBehaviour
     public int hp = 2;
     public int damage = 1;
     public Player player_target;
+    Animator anim;
 
     void Start()
     {
         lastPos = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate() 
     {
         if (isBlocked) {
             transform.position = lastPos;
+            return;
+        }
+        if (hp <= 0) {
             return;
         }
         Assert.AreEqual(rb.isKinematic, false);
@@ -55,13 +60,15 @@ public class ClassicZombie : MonoBehaviour
             return; // they have some delay, their reaction speed
         }
         Vector2 direction = (target.position - transform.position).normalized;
-        spriteRenderer.flipX = (direction.x < 0);
+        // spriteRenderer.flipX = (direction.x < 0);
+        rotateTowardsPlayer();
 
         tryToDamage(distance);
 
         // tries to go straight to player
         if (CanSee(target))
         {
+            anim.SetTrigger("ToWalk");
             lastPos = transform.position;
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
             return;
@@ -70,10 +77,20 @@ public class ClassicZombie : MonoBehaviour
         // chases the player's trace
         Vector2 targetPosition = player_target.trace[current_pos_in_trace];
         if (chasingRadius >= Vector2.Distance(targetPosition, transform.position)) {
+            anim.SetTrigger("ToWalk");
             MoveToPositionInTrace(targetPosition);
         }
     }
 
+    private void rotateTowardsPlayer() {
+        Vector3 our_pos = player_target.transform.position - transform.position;
+        our_pos.z = 0;
+        transform.right = our_pos;
+        // Vector3 direction = player_target.transform.position - transform.position;
+        // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        // Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        // transform.rotation = rotation;
+    }
     private void tryToGetAngry(float distance, float realRadius) {
         if (distance < realRadius)
         {
@@ -89,6 +106,7 @@ public class ClassicZombie : MonoBehaviour
     public void tryToDamage(float distance) {
         if (distance < damageRadius)
         {
+            anim.SetTrigger("ToHit");
             Debug.Log("Damaging good guy!");
             player_target.HeroDamaged(damage);
             StartCoroutine(BlockMovementForDuration(2f)); 

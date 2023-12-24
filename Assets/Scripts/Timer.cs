@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     {
         curTime = DateTime.Now;
         TimeSpan timeDifference = curTime.Subtract(startTime);
-        int secsRemaining = timeOverAllSeconds - timeDifference.Seconds;
+        int secsRemaining = timeOverAllSeconds - 60 * timeDifference.Minutes - timeDifference.Seconds;
         int minsRemaining = secsRemaining / 60;
         String secs = (secsRemaining % 60).ToString();
         if ((secsRemaining % 60) < 10) {
