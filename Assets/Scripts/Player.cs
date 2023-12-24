@@ -93,8 +93,19 @@ public class Player : MonoBehaviour //TODO: do not spawn near zombies for now
                 lastTimeToWaitForAttack = coolDownBetweenAttack;
             } else if (currentWeapon == WeaponState.Shotgun)
             {
-                Attack(FindNearestMonster(defaultLightRadius), attackDamage);
-                lastTimeToWaitForAttack = coolDownBetweenAttack;
+                Transform enemy = FindNearestMonster(defaultLightRadius);
+                if (enemy != null)
+                {
+                    patronsCount -= 1;
+                    Attack(enemy, attackDamage);
+                    lastTimeToWaitForAttack = coolDownBetweenAttack;
+
+                    if (patronsCount == 0)
+                    {
+                        ChangeWeapon();
+                        lastTimeToWaitForChanging = coolDownBetweenChanging;
+                    }
+                }
             }
         } else if (lastTimeToWaitForAttack > 0.0f)
         {
